@@ -28,7 +28,8 @@ pelican content -o output -s pelicanconf.py
 
 ## Deploy
 ```shell
-# Configure aws cli with access key and secret key. For region, use `ap-southeast-1` since we are using S3 in Singapore.
+# Configure aws cli with access key and secret key.
+# For region, use `ap-southeast-1` since we are using S3 in Singapore.
 aws configure
 
 # In pelican root directory, update the output directory.
