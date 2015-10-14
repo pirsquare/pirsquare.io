@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }}{% endblock title %}
+{% block metadata %}
+<meta property="og:image" content="{{ article.facebookimage }}"/>
+<meta property="og:description" content="{{ article.facebookdescription }}"/>
+{% endblock %}
+
+{% block content %}
+
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<div class="layout-header">
+    <a href="{{ SITEURL }}"><img class="logo" src="{{ SITEURL }}/images/logo.png"/></a>
+    <p><i>Just some notes lying around ... </i></p>
+</div>
+
+
+    <div class="section-item">
+        <div class="blog-page">
+            <div class="blog-page-title">
+                <h1>{{ article.title }}</h1>
+                <i>{{ article.locale_date }}</i>
+            </div>
+
+            <div class="blog-page-item">
+                {{ article.content }}
+            </div>
+
+
+        <div class="fb-share-button" data-layout="button_count"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br><br>
+
+        {% if DISQUS_SITENAME %}
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = '{{ DISQUS_SITENAME }}';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        {% endif %}
+        </div>
+    </div>
+
+
+{% endblock content %}

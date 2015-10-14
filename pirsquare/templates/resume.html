@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+
+{% block title %}Resume{% endblock title %}
+{% block content %}
+    <div class="summary section-item">
+        <div class="summary-header clearfix">
+            <img class="summary-picture u-pull-left" src="{{ SITEURL }}/images/ryan.png"/>
+
+            <div class="summary-title">
+                <h2>Ryan Liao</h2>
+            </div>
+
+            <div class="summary-details">
+                {{ EMAIL }} <br>
+                Singapore <br>
+            </div>
+        </div>
+
+    <div class="summary-description">
+        Thanks for reading! I'm Ryan and I have been a startup founder ever since I've grauduated from Nanyang Polytechnic (NYP).
+        Both the companies that I have founded is in the adtech space. These days, I'm more of a product guy and my interest lies
+        heavily in building products that I feel passionate about.
+    </div>
+    </div>
+
+
+    <div class="section-item">
+        <div class="section-item-title">
+            <h2>Experience</h2>
+        </div>
+
+        <div class="content-item">
+            <div class="content-item-header">
+                <h2>Founder, AudiencePi</h2>
+                January 2013 – August 2015 (2 years 8 months) | Singapore
+            </div>
+
+            <div class="content-item-description">
+                AudiencePi is a self-serve demand side platform for online display advertising. We provide sophisticated media planning tools to help buyers deliver their campaign's objectives. <br><br><br>
+
+                <b>Differentiation</b><br>
+                - Self-Serve <br>
+                - Inventory Planner for Media Buyers <br>
+                - Sprite Ads <br>
+                - Efficient Bidder with Configurable Optimization Strategy <br>
+                - Powerful Reporting Engine which allows slicing of report views in different aggregations to show trends. <br>
+                - Retarget Marketplace <br><br><br>
+
+
+                <b>Technology Stack</b><br>
+                Console (Web UI): Django, jQuery, Handlebars, SASS, Postgres, Celery, Memcached <br>
+                LB: Nginx, HAProxy, Google Compute Engine Load Balancing <br>
+                RTB: Golang, Aerospike <br>
+                Predictive Modeling: Scikit-Learn <br>
+                Data Store: Bigquery, Aerospike, Postgres <br>
+                Data Pipeline: Python scripts as cron jobs <br>
+                Devops: Ansible <br>
+                Monitoring: Stackdriver, Datadog, Librato, Pganalyze <br>
+                Logging: Logentries <br>
+                DNS: Route53 <br>
+                CDN: MaxCDN <br><br><br>
+
+
+                - Responsible for everything. <br>
+                - Started AudiencePi as a data provider and later pivoted to self-serve demand side platform backed
+                with retarget marketplace. <br>
+                - Single handedly built self-serve demand side platform backed by 19 different types of
+                servers (e.g. bidder, adserver, predictor, lb) . <br>
+                - Used ansible to fully automate deployment and configurations of 40+ servers across 4 clusters with
+                Google Cloud and Softlayer. <br>
+<!--                 - Failed because product market fit wasn't right and didn't have sufficient funds to cover monthly expenses
+                needed for pivot. Ecosystem is also too crowded. <br><br> -->
+
+            </div>
+
+        </div>
+
+
+        <div class="content-item content-item-divider">
+            <div class="content-item-header">
+                <h2>Co-Founder, AdVertive</h2>
+                August 2010 – October 2012 (2 years 3 months) | Singapore
+            </div>
+
+            <div class="content-item-description">
+                AdVertive is a Behavior Advertising Network catered to the APAC market. I founded AdVertive because I see a lack of targeting options available for advertisers in the region. There's also a lack of supply for advertisers running performance campaigns since other networks were not integrated with adexchange at that point in time. <br><br>
+
+                Responsible in engineering, operations, sales and support. <br><br>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section-item">
+        <div class="section-item-title">
+            <h2>Skills</h2>
+        </div>
+
+        <div class="content-item">
+            <div class="content-item-description">
+                Programming Language: Python, Golang, Javascript, Erlang <br>
+                Data Store: Postgres, BigQuery, Aerospike, Vertica, Couchbase, Redis <br>
+                Frameworks & Libraries: Django, jQuery, KnockoutJS<br>
+                Others: Nginx, HAProxy, Memcached, Fluentd, Ansible, Photoshop, Web Design, Monitoring, Supervisord, Machine Learning, Scikit-Learn, Graphlab (Dato)<br><br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-summary section-item">
+        <div class="section-item-title">
+            <h2>Education</h2>
+        </div>
+
+        <div class="content-item">
+            <div class="content-item-header">
+                <h2>Nanyang Polytechnic</h2>
+                Business Informatics, Information Technology <br>
+                2007-2010 <br><br>
+                - Admitted to Director's List for SEM 2 - 2008/2009 <br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-item">
+        <div class="section-item-title">
+            <h2>Languages</h2>
+        </div>
+
+        <div class="content-item">
+            <div class="content-item-description">
+                - English <br>
+                - Chinese <br><br>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-summary section-item">
+        <div class="section-item-title">
+            <h2>Reference</h2>
+        </div>
+
+        <div class="content-item">
+            <div class="content-item-header">
+                <h2>Github</h2>
+                <a href="{{ GITHUB_URL }}">{{ GITHUB_URL }}</a>
+            </div>
+
+
+            <div class="content-item-header">
+                <h2>Behance</h2>
+                <a href="{{ BEHANCE_URL }}">{{ BEHANCE_URL }}</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-footer">
+        <i>See online version of resume at <a href="{{ RESUME_URL }}">{{ RESUME_URL }}</a></i>
+    </div>
+    </div>
+{% endblock content %}

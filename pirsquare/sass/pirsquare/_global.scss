@@ -1,0 +1,68 @@
+body {
+    background-color: #f4f4f4;
+    min-height: 500px;
+    font-family: "Open Sans";
+    font-size: $base-font-size;
+    font-weight: $font-normal;
+    line-height: 1.42857;
+    color: $black3;
+}
+
+a {
+    color: $base-red;
+    text-decoration: none;
+    &:hover, &:focus {
+        text-decoration: underline;
+        color: $base-red;
+        outline: none;
+    }
+}
+
+.footer a, .blog-archive a {
+    color: $base-font-color;
+    text-decoration: underline;
+    &:hover, &:focus {
+        text-decoration: underline;
+        color: $base-red;
+        outline: none;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: $font-semibold;
+    font-family: "Open Sans";
+}
+
+h1 {
+    font-size: $h1-size;
+    font-weight: bold;
+    font-family: "Bitter";
+}
+
+h2 {
+    font-size: $h2-size;
+    font-weight: bold;
+    font-family: "Bitter";
+}
+
+code {
+    background: #DEDEDE;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+}
+
+// https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5rem 10px;
+    padding: 1.5rem 20px;
+}
+
+blockquote p {
+    display: inline;
+}
+
+.red-text {
+    color: #d71a21;
+}

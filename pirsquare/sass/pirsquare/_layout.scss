@@ -1,0 +1,181 @@
+.layout {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+header {
+    margin: 40px auto;
+    padding-right: 50px;
+    text-align: center;
+    display: block;
+}
+
+.layout-header {
+    p {
+        padding-left: 5px;
+        font-size: 12px;
+    }
+}
+
+.logo {
+    height: 35px;
+    padding-bottom: 5px;
+}
+
+.section-item {
+    margin: 50px auto;
+    border: 2px solid #ccc;
+}
+
+.section-footer {
+    margin: auto;
+    text-align: center;
+}
+
+.section-item-title {
+    h2 {
+        text-transform: uppercase;
+        margin: 10px;
+    }
+
+    margin: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.summary-header {
+    margin: 30px;
+}
+
+.summary-picture {
+    padding-right: 30px;
+    height: 150px;
+}
+
+.summary-title {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.summary-details {
+    margin-top: 60px;
+}
+
+.summary-description {
+    margin: 30px;
+}
+
+.content-item {
+    margin: 25px;
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 0.4rem;
+    }
+}
+
+.content-item-divider {
+    border-top: 2px solid #ccc;
+}
+
+.content-item-header {
+    margin: 25px 5px 40px 5px;
+}
+
+.content-item-description {
+    margin-top: 40px;
+    line-height: 2rem;
+}
+
+.blog-archive {
+    margin: 20px;
+    line-height: 3rem;
+}
+
+.blog-page {
+    margin: 40px;
+    line-height: 2.1rem;
+
+    img {
+        max-width: 95%;
+    }
+}
+
+.blog-page-title {
+    margin: 30px;
+    text-align: center;
+}
+
+.blog-page-item {
+    margin-bottom: 120px;
+
+    h1, h2 {
+        line-height: 4rem;
+        border-bottom: 1px solid $base-border-color;
+    }
+
+    ol, ul {
+        padding-left: 3px;
+        margin-top: -1.7rem;
+    }
+
+    ul {
+        list-style: disc inside;
+    }
+}
+
+.footer {
+    margin: 20px;
+    line-height: 3rem;
+}
+
+.section-row {
+    width: 64%;
+    margin: 90px auto;
+}
+
+.section-item-img {
+    margin: auto;
+    text-align: center;
+}
+
+.section-item-description {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+img[src$='#img-center'] {
+    margin: auto;
+    display: block;
+}
+
+img[src$='img-with-border'] {
+    border-radius: 2px;
+    border: 1px solid $base-border-color;
+}
+
+.fb-share-button {
+    float: left;
+    padding-right: 10px;
+}
+
+.twitter-share-button {
+    float: left;
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+
+        // 1
+        display: table;
+
+        // 2
+
+    }
+
+    &:after {
+        clear: both;
+    }
+}

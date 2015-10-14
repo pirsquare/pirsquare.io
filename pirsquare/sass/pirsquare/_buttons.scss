@@ -1,0 +1,38 @@
+.button-reddish {
+    border: 1px solid #a9080d;
+    color: #fff;
+    background-color: #d13b40;
+    border-radius: 2px;
+    &:active, &:hover, &:focus {
+        border: 1px solid #a9080d;
+        color: #fff;
+        background-color: #be2c31;
+    }
+}
+
+.button {
+    text-transform: inherit;
+    letter-spacing: inherit;
+    height: 35px;
+    width: 120px;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0px auto;
+    display: inline-block;
+    .signup-button & {
+        font-size: 18px;
+        height: 42px;
+        width: 210px;
+    }
+    .hero-button & {
+        font-size: 18px;
+        height: 42px;
+        width: 350px;
+    }
+}
+
+.hero-button, .signup-button {
+    margin: 15px auto;
+    text-align: center;
+}
