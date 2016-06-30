@@ -11,6 +11,7 @@ body {
 a {
     color: $base-red;
     text-decoration: none;
+
     &:hover, &:focus {
         text-decoration: underline;
         color: $base-red;
@@ -21,6 +22,7 @@ a {
 .footer a, .blog-archive a {
     color: $base-font-color;
     text-decoration: underline;
+
     &:hover, &:focus {
         text-decoration: underline;
         color: $base-red;
@@ -28,7 +30,7 @@ a {
     }
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: $font-semibold;
     font-family: "Open Sans";
 }
@@ -55,7 +57,7 @@ code {
 blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
-    margin: 1.5rem 10px;
+    margin: 1.5rem 0;
     padding: 1.5rem 20px;
 }
 
@@ -65,4 +67,16 @@ blockquote p {
 
 .red-text {
     color: #d71a21;
+}
+
+// Phones and tablets
+@media only screen and (max-width: 992px) {
+    body {
+        font-size: $base-font-size - 1px;
+    }
+
+    blockquote {
+        margin: 1.5rem 0;
+        padding: 1rem 10px;
+    }
 }

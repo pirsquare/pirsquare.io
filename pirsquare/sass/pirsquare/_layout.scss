@@ -1,6 +1,8 @@
 .layout {
     max-width: 900px;
     margin: 50px auto;
+
+    // word-break: break-all;
 }
 
 header {
@@ -120,6 +122,10 @@ header {
 
     ul {
         list-style: disc inside;
+
+        li {
+            word-wrap: break-word;
+        }
     }
 }
 
@@ -177,5 +183,24 @@ img[src$='img-with-border'] {
 
     &:after {
         clear: both;
+    }
+}
+
+// Phones and tablets
+@media only screen and (max-width: 992px) {
+    .layout {
+        margin: 30px auto;
+    }
+
+    .layout-header {
+        margin: auto 10px;
+    }
+
+    .section-item {
+        margin: 30px 10px;
+    }
+
+    .blog-page {
+        margin: 20px;
     }
 }
